@@ -39,4 +39,5 @@ public class PlayerRoll : MonoBehaviour
 
         // rb.AddForceAtPosition(rb.velocity, gravitionalFoce.transform.position);
     }
+
 }

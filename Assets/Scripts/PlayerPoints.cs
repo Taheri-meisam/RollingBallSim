@@ -18,9 +18,10 @@ public class PlayerPoints : MonoBehaviour
     [SerializeField] TMP_Text UIText;
     private void OnCollisionEnter(Collision collision)
     {
-        hitNum++;
+      
         if (collision.gameObject.tag == "wall" || collision.gameObject.tag =="drop")
         {
+            hitNum++;
             playerHP--;
             sliderFill.color = Color.red;
             updateHealth(playerHP, playerMaxMP);

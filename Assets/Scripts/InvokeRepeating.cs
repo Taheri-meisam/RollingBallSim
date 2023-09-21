@@ -21,3 +21,7 @@ public class InvokeRepeating : MonoBehaviour
         Instantiate(target, new Vector3(x, 2, z), Quaternion.identity);
     }
 }
+
+
+// resource : https://docs.unity3d.com/ScriptReference/MonoBehaviour.Invoke.html
+//https://docs.unity3d.com/ScriptReference/MonoBehaviour.InvokeRepeating.html

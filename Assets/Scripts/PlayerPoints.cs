@@ -45,8 +45,8 @@ public class PlayerPoints : MonoBehaviour
     }
     private void Update()
     {
-        hpSlider.transform.rotation = camera.transform.rotation;
-        hpSlider.transform.position = target.position + offset;
+          hpSlider.transform.rotation = camera.transform.rotation;
+          hpSlider.transform.position = target.position + offset;
     }
 
 

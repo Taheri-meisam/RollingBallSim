@@ -43,3 +43,6 @@ public class Swing : MonoBehaviour
 
     }
 }
+
+
+//try to make the swing moves in different patterns 

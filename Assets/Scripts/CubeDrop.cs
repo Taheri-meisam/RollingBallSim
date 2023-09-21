@@ -34,3 +34,6 @@ public class CubeDrop : MonoBehaviour
         
     }
 }
+
+
+// your task is to remove the cubes after a certain time 

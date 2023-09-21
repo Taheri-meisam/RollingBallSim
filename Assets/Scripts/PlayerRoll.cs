@@ -54,8 +54,8 @@ public class PlayerRoll : MonoBehaviour
 
         // rb.AddForceAtPosition(rb.velocity, gravitionalFoce.transform.position);
 
-        float pitch = Mathf.Lerp(minPitch, maxPitch, speed / maxSpeed* 2);
-        float volume = Mathf.Lerp(minVolume, maxVolume, speed / maxSpeed *5);
+        float pitch = Mathf.Lerp(minPitch, maxPitch, speed / maxSpeed);
+        float volume = Mathf.Lerp(minVolume, maxVolume, speed / maxSpeed);
 
         // Set pitch and volume for the engine sound
         engineSound.pitch = pitch;

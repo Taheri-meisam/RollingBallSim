@@ -10,12 +10,16 @@ public class PlayerPoints : MonoBehaviour
     public int playerHP = 100;
     public int playerMaxMP = 100;
     public int hitNum = 0;
+
+    public int hitNum2 = 0;
+
     [SerializeField] private Slider hpSlider;
     [SerializeField] private Camera camera;
     [SerializeField] private Transform target;
     [SerializeField] private Vector3 offset;
     [SerializeField] private Image sliderFill;
     [SerializeField] TMP_Text UIText;
+
     private void OnCollisionEnter(Collision collision)
     {
       
@@ -44,4 +48,7 @@ public class PlayerPoints : MonoBehaviour
         hpSlider.transform.rotation = camera.transform.rotation;
         hpSlider.transform.position = target.position + offset;
     }
+
+
+
 }

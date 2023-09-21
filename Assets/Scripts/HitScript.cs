@@ -5,13 +5,19 @@ using UnityEngine;
 public class HitScript : MonoBehaviour
 {
     Color orangeColor= new Color(1.0f, 0.64f, 0.0f);
+    private AudioSource crashSound;
 
+    private void Start()
+    {
+        crashSound = GetComponent<AudioSource>();
+    }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Collison happened " + this.name);
             GetComponent<MeshRenderer>().material.color = Color.red;
+            crashSound.Play();
         }
 
     }
